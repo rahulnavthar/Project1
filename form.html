@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>FORM DEMO</title>
+	<meta >
+	<style>
+	body{
+        background-color:pink;
+     }
+ 
+	</style>
+</head>
+<body>
+
+<!------------------------------ FORM DEMO ------------------->
+   <form action="register.php" method="post/get">
+   	
+   	<label style="color:green;"><span style="color:red;">*</span>Name:</label><input type="text" pattern="[A-Za-z]{10}" required> <br/><br/>
+
+    <label style="color:green;"><span style="color:red;">*</span>Mobile:</label><input type="text" pattern="[0-9]{10}" required><br><br>
+
+    <label style="color:green;"><span style="color:red;">*</span>Email:</label><input type="email" required><br><br>
+
+    <label>Gender:</label><input type="radio" value="male" name="radio" checked>Male
+           <input type="radio" value="female" name="radio">Female<br><br>
+
+    <label>DOB:</label><input type="date" max="2022-11-02" min="2022-01-01"><br><br>
+    
+    <label>Course:</label><select>
+    	    <option>Select Your Course</option>
+    	    <option selected>Front-End</option>
+    	    <option>Back-End</option>
+    	    <option>FUll Stack</option>
+    	    <option>MERN Stack</option>
+    	    <option>MEAN Stack</option>
+           </select><br><br>
+ 
+    <label>Address:</label><textarea maxlength="50"></textarea><br><br>
+
+    <input type="checkbox"> Tearms & Condition
+     <hr>
+     <input type="submit" name="button" value="submit">
+  </form>   
+   
+
+ </body>
+</html>
